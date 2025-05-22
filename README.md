@@ -1,6 +1,6 @@
 # Natural Language Processing of Disaster Tweets
-**Classification of Disaster Tweets using Natural Language Processing (NLP)** 
----
+Classification of Disaster Tweets using Natural Language Processing (NLP)
+
 
 ![disaster_keywords](https://github.com/user-attachments/assets/a16ad502-10b4-4429-bebd-5538c8d67925)
 
