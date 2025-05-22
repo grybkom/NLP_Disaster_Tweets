@@ -2,8 +2,7 @@
 Classification of Disaster Tweets using Natural Language Processing (NLP)
 ---
 
-
-![disaster_keywords](https://github.com/user-attachments/assets/a16ad502-10b4-4429-bebd-5538c8d67925)
+![disaster_keywords](https://github.com/user-attachments/assets/c1fc3a28-fffc-4259-8a93-09a901fe0501)
 
 
 ## BACKGROUND
