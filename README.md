@@ -1,6 +1,7 @@
 # Natural Language Processing of Disaster Tweets
 
-This work was for the Kaggle competition Natural Language Processing (NLP) with Disaster Tweets. The code provided in this repository is written to load the data using a notebook running on Kaggle’s platform.
+Classification of Disaster Tweets using Natural Language Processing (NLP) 
+![disaster_keywords](https://github.com/user-attachments/assets/785e35a7-072c-4448-bcfa-74329d2372cc)
 
 ---
 
