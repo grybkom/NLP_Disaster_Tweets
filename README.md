@@ -11,6 +11,14 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 ## DATA
 Addison Howard, devrishi, Phil Culliton, Yufeng Guo. (2019). Natural Language Processing with Disaster Tweets. Kaggle. https://kaggle.com/competitions/nlp-getting-started
 
+## RESULTS
+![Simple RNN](https://github.com/user-attachments/assets/88b147c0-1e63-43a1-b97c-890c39512055)
+
+![RNN](https://github.com/user-attachments/assets/9857863d-5697-4681-a91f-eb4014cac6ad)
+
+![LSTM](https://github.com/user-attachments/assets/3f505b6a-b46d-4a65-a8f1-a3e12a1174a6)
+
+
 ## REFERENCES
 
 Wikipedia contributors. (2024, August 3). Twitter. Wikipedia. https://en.wikipedia.org/wiki/Twitter
