@@ -1,13 +1,15 @@
 # Natural Language Processing of Disaster Tweets
 **Classification of Disaster Tweets using Natural Language Processing (NLP)** 
-
-![disaster_keywords](https://github.com/user-attachments/assets/785e35a7-072c-4448-bcfa-74329d2372cc)
-
 ---
+
+![disaster_keywords](https://github.com/user-attachments/assets/a16ad502-10b4-4429-bebd-5538c8d67925)
+
 
 ## BACKGROUND
 
 Tweets are short social networking posts broadcasted over the Twitter platform (Wikipedia contributors, 2024). In 2023 the company was purchased by Elon Musk and is now known as X (Wikipedia contributors, 2024). Early detection of disaster events can aid first responders and hasten response time. Huang et al. (2022) has proposed the use of social media posts to help rapidly identify emergency events. The aim of this work is to use natural language processing (NLP) to analyze tweets and predict if they are describing a real disaster.
+
+
 
 ## DATA
 Addison Howard, devrishi, Phil Culliton, Yufeng Guo. (2019). Natural Language Processing with Disaster Tweets. Kaggle. https://kaggle.com/competitions/nlp-getting-started
