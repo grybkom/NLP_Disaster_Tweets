@@ -11,8 +11,10 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 
 
 
-## DATA
-Addison Howard, devrishi, Phil Culliton, Yufeng Guo. (2019). Natural Language Processing with Disaster Tweets. Kaggle. https://kaggle.com/competitions/nlp-getting-started
+## Data & Methodology
+
+### Data
+- The data used for this work is available at Kaggle. Addison Howard, devrishi, Phil Culliton, Yufeng Guo. (2019). Natural Language Processing with Disaster Tweets. [https://kaggle.com/competitions/nlp-getting-started](https://www.kaggle.com/competitions/nlp-getting-started/data)
 
 ## RESULTS
 ![Simple RNN](https://github.com/user-attachments/assets/88b147c0-1e63-43a1-b97c-890c39512055)
