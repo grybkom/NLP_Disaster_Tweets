@@ -25,7 +25,7 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 ### Data
 - The data used for this work is available at Kaggle. Addison Howard, devrishi, Phil Culliton, Yufeng Guo. (2019). Natural Language Processing with Disaster Tweets. [https://kaggle.com/competitions/nlp-getting-started](https://www.kaggle.com/competitions/nlp-getting-started/data)
 - The training set consists of 7613 tweets with 4342 being labeled as non-disaster tweets and 3271 labeled as being related to a disaster. 
-- The testing set consists of 3263 unlabeled tweets.
+- The testing set consists of 3263 unlabeled tweets (for competion submission).
 
 ### Data Processing
 - Tweets were converted to lowercase, and punctuation, numbers and non-alphanumeric characters were removed.
