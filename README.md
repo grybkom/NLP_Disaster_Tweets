@@ -9,8 +9,6 @@ Classification of Tweets as Disaster or Non-disaster Related Using Natural Langu
 
 Tweets are short social networking posts broadcasted over the Twitter platform (Wikipedia contributors, 2024). In 2023 the company was purchased by Elon Musk and is now known as X (Wikipedia contributors, 2024). Early detection of disaster events can aid first responders and hasten response time. Huang et al. (2022) has proposed the use of social media posts to help rapidly identify emergency events. The aim of this work is to use natural language processing (NLP) to analyze tweets and predict if they are describing a real disaster.
 
-
-
 ## Data & Methodology
 
 ### Language
@@ -22,7 +20,7 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
   - [TensorFlow](https://www.tensorflow.org/)
 
 ### Hardware
-- Notebooks were created and run on Kaggle's platform utalizing a CPU, no accelorator was used.
+- Notebooks were created and run on Kaggle's platform using a CPU, no accelorator was used.
 
 ### Data
 - The data used for this work is available at Kaggle. Addison Howard, devrishi, Phil Culliton, Yufeng Guo. (2019). Natural Language Processing with Disaster Tweets. [https://kaggle.com/competitions/nlp-getting-started](https://www.kaggle.com/competitions/nlp-getting-started/data)
@@ -30,10 +28,11 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 - The testing set consists of 3263 unlabeled tweets.
 
 ### Data Processing
-- Tweets was converted to lowercase, and punctuation, numbers and non-alphanumeric characters were removed.
-- Stemming was also applied to the tweets, which reduces an inflected form of a word to its root form.
-- Tweets were tokenized, converting them into NumPy arrays.
-- Padding was added to the tokenized tweets to ensure they were all the same size. 
+- Tweets were converted to lowercase, and punctuation, numbers and non-alphanumeric characters were removed.
+- URLs, HTML entities, and user mentions were stripped.
+- Stemming was applied using the Porter Stemmer, which reduces an inflected form of a word to its root form. For example, after stemming both ‘screaming’, and ‘screamed’ would become ‘scream’.
+- A Keras `Tokenizer` was used to convert words to numerical tokens, limited to the 3,500 most common words. An OOV (out-of-vocabulary) token was specified to handle unseen words.
+- The tokenized tweets were converted into padded NumPy arrays to ensure consistent input lengths for modeling.
 ![non-disaster_keywords_comparison](https://github.com/user-attachments/assets/1aa6212d-c6bf-4d15-8650-5200dbc6b8f6)
 
 ### Models
@@ -41,12 +40,14 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 
 
 ## RESULTS
-![Simple RNN](https://github.com/user-attachments/assets/88b147c0-1e63-43a1-b97c-890c39512055)
+### Simple RNN
+![Simple RNN](https://github.com/user-attachments/assets/d604157c-5827-4c4b-8ded-2b5517cb1b44)
+### RNN
+![RNN](https://github.com/user-attachments/assets/f3533879-9d47-4b8e-823c-7ce39b21b9cf)
+### Bidirectional LSTM
+![LSTM](https://github.com/user-attachments/assets/a0dc480f-488b-4410-a079-81695c21f5e6)
 
-![RNN](https://github.com/user-attachments/assets/9857863d-5697-4681-a91f-eb4014cac6ad)
-
-![LSTM](https://github.com/user-attachments/assets/3f505b6a-b46d-4a65-a8f1-a3e12a1174a6)
-
+![confusion_matrix_bidirectional](https://github.com/user-attachments/assets/d8300aac-941a-45e9-ab3e-519a3ec81638)
 
 ## REFERENCES
 
@@ -54,3 +55,6 @@ Wikipedia contributors. (2024, August 3). Twitter. Wikipedia. https://en.wikiped
 
 Huang, L., Shi, P., Zhu, H., & Chen, T. (2022). Early detection of emergency events from social media: a new text clustering approach. Natural Hazards, 111(1), 851–875. https://doi.org/10.1007/s11069-021-05081-1
 
+## Author
+
+Michael Grybko - GitHub username: grybkom
