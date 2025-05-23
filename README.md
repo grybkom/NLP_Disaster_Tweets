@@ -34,13 +34,30 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 - A Keras `Tokenizer` was used to convert words to numerical tokens, limited to the 3,500 most common words. An OOV (out-of-vocabulary) token was specified to handle unseen words.
 - The tokenized tweets were converted into padded NumPy arrays to ensure consistent input lengths for modeling.
 ![non-disaster_keywords_comparison](https://github.com/user-attachments/assets/1aa6212d-c6bf-4d15-8650-5200dbc6b8f6)
-*Figure: Most common keywords in non-disaster tweets.*
+*Figure: Most common keywords in non-disaster tweets before and after cleaning.*
 
 ### Models
 **Three neural network models were constructed of increasing complexity, and their performance was compared by examining accuracy, loss, and F1 scores**
 
 #### Simple RNN
+**This baseline model serves as a starting point for comparing more complex architectures.**
 
+**Architecture:**
+	- Embedding layer with vocabulary size of 3,500 and 15-dimensional embedding vectors
+	- SpatialDropout1D with dropout rate of 0.8 to regularize the embedding layer
+	- Masking layer to ignore padded values (0s)
+	- SimpleRNN layer with 64 units
+	- Dropout layer with 0.5 dropout rate
+	- Dense output layer with sigmoid activation for binary classification
+
+**Training Details:**
+	- Loss Function: binary_crossentropy
+  - Optimizer: Adam with a learning rate of 0.001
+	- Metrics: Accuracy and F1 Score (custom implementation)
+  - Epochs: 24
+	- Batch Size: 64
+  - Validation Split: 20%
+	- Learning Rate Scheduler: ReduceLROnPlateau (to reduce LR on performance plateaus)
 
 
 ## RESULTS
