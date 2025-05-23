@@ -39,7 +39,7 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 ### Models
 **Three neural network models were constructed of increasing complexity, and their performance was compared by examining accuracy, loss, and F1 scores**
 
-#### Simple RNN
+#### 1)Simple RNN
 **This baseline model serves as a starting point for comparing more complex architectures.**
 
 **Architecture:**
@@ -59,7 +59,7 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 - Validation Split: 20%
 - Learning Rate Scheduler: ReduceLROnPlateau (to reduce LR on performance plateaus)
 
-#### Deep RNN
+#### 2)Deep RNN
 **This model builds on the Simple RNN by adding depth and complexity.**
 
 - Added a second SimpleRNN layer with return_sequences=True in the first RNN to pass the entire sequence to the next layer.
@@ -68,12 +68,22 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 
 All other training parameters (optimizer, loss function, metrics, epochs, batch size, learning rate schedule) remained the same as in the Simple RNN model.
 
+#### 3) Bidirectional LSTM (BiLSTM)
+**This model builds off the previous RNN architectures replacing 'SimpleRNN' layers wiht Bidirectional LSTM layers to capture context from both past and future tokens**
+
+- Two stacked Bidirectional LSTM layers:
+  - The first returns full sequences to allow the second LSTM to process temporal patterns further.
+  - Both use recurrent dropout (0.3) for regularization.
+- Added Batch Normalization before the output layers to stabilize and accelerate training.
+
+All other training parameters (optimizer, loss function, metrics, epochs, batch size, learning rate schedule) remained the same as in the priveous models.
+
 ## RESULTS
 ### Simple RNN
 ![Simple RNN](https://github.com/user-attachments/assets/d604157c-5827-4c4b-8ded-2b5517cb1b44)
-### RNN
+### Deep RNN
 ![RNN](https://github.com/user-attachments/assets/f3533879-9d47-4b8e-823c-7ce39b21b9cf)
-### Bidirectional LSTM
+### BiLSTM
 ![LSTM](https://github.com/user-attachments/assets/a0dc480f-488b-4410-a079-81695c21f5e6)
 
 ![confusion_matrix_bidirectional](https://github.com/user-attachments/assets/d8300aac-941a-45e9-ab3e-519a3ec81638)
