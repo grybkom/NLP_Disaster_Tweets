@@ -34,9 +34,13 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 - A Keras `Tokenizer` was used to convert words to numerical tokens, limited to the 3,500 most common words. An OOV (out-of-vocabulary) token was specified to handle unseen words.
 - The tokenized tweets were converted into padded NumPy arrays to ensure consistent input lengths for modeling.
 ![non-disaster_keywords_comparison](https://github.com/user-attachments/assets/1aa6212d-c6bf-4d15-8650-5200dbc6b8f6)
+*Figure: Most common keywords in non-disaster tweets.*
 
 ### Models
-**Three models were constructed of increasing complexity, and their performance was compared by examining accuracy, loss, and F1 scores**
+**Three neural network models were constructed of increasing complexity, and their performance was compared by examining accuracy, loss, and F1 scores**
+
+#### Simple RNN
+
 
 
 ## RESULTS
