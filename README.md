@@ -2,7 +2,7 @@
 Classification of Tweets as Disaster or Non-disaster Related Using Natural Language Processing (NLP)
 ---
 
-![disaster_keywords](https://github.com/user-attachments/assets/c1fc3a28-fffc-4259-8a93-09a901fe0501)
+![disaster_keywords](https://github.com/user-attachments/assets/713f9c1d-fe34-4711-b528-1cc4471fa78c)
 
 
 ## BACKGROUND
@@ -15,6 +15,17 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 
 ### Data
 - The data used for this work is available at Kaggle. Addison Howard, devrishi, Phil Culliton, Yufeng Guo. (2019). Natural Language Processing with Disaster Tweets. [https://kaggle.com/competitions/nlp-getting-started](https://www.kaggle.com/competitions/nlp-getting-started/data)
+- The training set consists of 7613 tweets with 4342 being labeled as non-disaster tweets and 3271 labeled as being related to a disaster. 
+- The testing set consists of 3263 unlabeled tweets.
+
+### Data Processing
+- Tweets was converted to lowercase, and punctuation, numbers and non-alphanumeric characters were removed.
+- Stemming was also applied to the tweets, which reduces an inflected form of a word to its root form.
+- Tweets were tokenized, converting them into NumPy arrays.
+- Padding was added to the tokenized tweets to ensure they were all of the same size. 
+
+
+
 
 ## RESULTS
 ![Simple RNN](https://github.com/user-attachments/assets/88b147c0-1e63-43a1-b97c-890c39512055)
