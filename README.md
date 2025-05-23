@@ -43,22 +43,30 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 **This baseline model serves as a starting point for comparing more complex architectures.**
 
 **Architecture:**
-	- Embedding layer with vocabulary size of 3,500 and 15-dimensional embedding vectors
-	- SpatialDropout1D with dropout rate of 0.8 to regularize the embedding layer
-	- Masking layer to ignore padded values (0s)
-	- SimpleRNN layer with 64 units
-	- Dropout layer with 0.5 dropout rate
-	- Dense output layer with sigmoid activation for binary classification
+- Embedding layer with vocabulary size of 3,500 and 15-dimensional embedding vectors
+- SpatialDropout1D with dropout rate of 0.8 to regularize the embedding layer
+- Masking layer to ignore padded values (0s)
+- SimpleRNN layer with 64 units
+- Dropout layer with 0.5 dropout rate
+- Dense output layer with sigmoid activation for binary classification
 
 **Training Details:**
-	- Loss Function: binary_crossentropy
-  - Optimizer: Adam with a learning rate of 0.001
-	- Metrics: Accuracy and F1 Score (custom implementation)
-  - Epochs: 24
-	- Batch Size: 64
-  - Validation Split: 20%
-	- Learning Rate Scheduler: ReduceLROnPlateau (to reduce LR on performance plateaus)
+- Loss Function: binary_crossentropy
+- Optimizer: Adam with a learning rate of 0.001
+- Metrics: Accuracy and F1 Score (custom implementation)
+- Epochs: 24
+- Batch Size: 64
+- Validation Split: 20%
+- Learning Rate Scheduler: ReduceLROnPlateau (to reduce LR on performance plateaus)
 
+#### Deep RNN
+**This model builds on the Simple RNN by adding depth and complexity.**
+
+- Added a second SimpleRNN layer with return_sequences=True in the first RNN to pass the entire sequence to the next layer.
+- Introduced a Dense layer with 64 units and ReLU activation before the output layer, adding non-linearity and capacity.
+- Applied L2 regularization to both the Dense and output layers.
+
+All other training parameters (optimizer, loss function, metrics, epochs, batch size, learning rate schedule) remained the same as in the Simple RNN model.
 
 ## RESULTS
 ### Simple RNN
