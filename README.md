@@ -40,7 +40,7 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 ### Models
 **Three neural network models were constructed of increasing complexity, and their performance was compared by examining accuracy, loss, and F1 scores.**
 
-#### 1)Simple RNN
+#### 1) Simple RNN
 **This baseline model serves as a starting point for comparing more complex architectures.**
 
 **Architecture:**
@@ -60,7 +60,7 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 - Validation Split: 20%
 - Learning Rate Scheduler: ReduceLROnPlateau (to reduce LR on performance plateaus)
 
-#### 2)Deep RNN
+#### 2) Deep RNN
 **This model builds on the Simple RNN by adding depth and complexity.**
 
 - Added a second SimpleRNN layer with return_sequences=True in the first RNN to pass the entire sequence to the next layer.
