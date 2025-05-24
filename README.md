@@ -38,7 +38,7 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 *Figure: Most common keywords in non-disaster tweets before and after cleaning.*
 
 ### Models
-**Three neural network models were constructed of increasing complexity, and their performance was compared by examining accuracy, loss, and F1 scores**
+**Three neural network models were constructed of increasing complexity, and their performance was compared by examining accuracy, loss, and F1 scores.**
 
 #### 1)Simple RNN
 **This baseline model serves as a starting point for comparing more complex architectures.**
