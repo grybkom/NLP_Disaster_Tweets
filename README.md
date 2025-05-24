@@ -74,7 +74,7 @@ All other training parameters (optimizer, loss function, metrics, epochs, batch 
 
 - Two stacked Bidirectional LSTM layers:
   - The first returns full sequences to allow the second LSTM to process temporal patterns further.
-  - Both use recurrent dropout (0.3) for regularization.
+  - The second uses recurrent dropout (0.3) for regularization.
 - Added Batch Normalization before the output layers to stabilize and accelerate training.
 
 All other training parameters (optimizer, loss function, metrics, epochs, batch size, learning rate schedule) remained the same as in the priveous models.
