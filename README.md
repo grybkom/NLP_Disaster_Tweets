@@ -15,9 +15,10 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 - Python
   - [Pandas](https://pandas.pydata.org/)
   - [NumPy](https://numpy.org/)
-  - [wordcloud](https://pypi.org/project/wordcloud/)
+  - [Wordcloud](https://pypi.org/project/wordcloud/)
   - [Matplotlib](https://matplotlib.org/)
   - [TensorFlow](https://www.tensorflow.org/)
+  - [NLTK](https://www.nltk.org/)
 
 ### Hardware
 - Notebooks were created and run on Kaggle's platform using a CPU, no accelorator was used.
@@ -84,9 +85,16 @@ All other training parameters (optimizer, loss function, metrics, epochs, batch 
 ### Deep RNN
 ![RNN](https://github.com/user-attachments/assets/f3533879-9d47-4b8e-823c-7ce39b21b9cf)
 ### BiLSTM
-![LSTM](https://github.com/user-attachments/assets/a0dc480f-488b-4410-a079-81695c21f5e6)
+![LSTM](https://github.com/user-attachments/assets/61c6187c-549c-4629-9d52-f9e53b884218)
 
-![confusion_matrix_bidirectional](https://github.com/user-attachments/assets/d8300aac-941a-45e9-ab3e-519a3ec81638)
+![confusion_matrix_bidirectional](https://github.com/user-attachments/assets/026258db-9f38-411d-b925-5ddc80f71a10)
+
+## To Do
+- Develop a strategy for cleaning or handling emojis in tweets such as remove, replace with text, or encode.
+- Compare lemmatization vs. stemming to determine which improves model performance during text preprocessing.
+- Assess the impact of alternative learning rate schedulers, such as CosineDecayRestarts, on training stability and final performance.
+- Build and evaluate a model using a pretrained transformer, such as [BERT](https://huggingface.co/docs/transformers/en/model_doc/bert) or [DistilBERT](https://arxiv.org/abs/1910.01108), for improved text understanding.
+  - Visualize attention weights to interpret which words influence predictions.
 
 ## REFERENCES
 
