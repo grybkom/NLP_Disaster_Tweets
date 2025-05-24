@@ -70,7 +70,7 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 All other training parameters (optimizer, loss function, metrics, epochs, batch size, learning rate schedule) remained the same as in the Simple RNN model.
 
 #### 3) Bidirectional LSTM (BiLSTM)
-**This model builds off the previous RNN architectures replacing 'SimpleRNN' layers wiht Bidirectional LSTM layers to capture context from both past and future tokens**
+**This model builds off the previous RNN architectures replacing Simple RNN layers wiht Bidirectional LSTM layers to capture context from both past and future tokens**
 
 - Two stacked Bidirectional LSTM layers:
   - The first returns full sequences to allow the second LSTM to process temporal patterns further.
@@ -90,10 +90,10 @@ All other training parameters (optimizer, loss function, metrics, epochs, batch 
 ![confusion_matrix_bidirectional](https://github.com/user-attachments/assets/026258db-9f38-411d-b925-5ddc80f71a10)
 
 ## To Do
-- Develop a strategy for cleaning or handling emojis in tweets such as remove, replace with text, or encode.
-- Compare lemmatization vs. stemming to determine which improves model performance during text preprocessing.
-- Assess the impact of alternative learning rate schedulers, such as CosineDecayRestarts, on training stability and final performance.
-- Build and evaluate a model using a pretrained transformer, such as [BERT](https://huggingface.co/docs/transformers/en/model_doc/bert) or [DistilBERT](https://arxiv.org/abs/1910.01108), for improved text understanding.
+- [ ] Develop a strategy for cleaning or handling emojis in tweets such as remove, replace with text, or encode.
+- [ ] Compare lemmatization vs. stemming to determine which improves model performance during text preprocessing.
+- [ ] Assess the impact of alternative learning rate schedulers, such as CosineDecayRestarts, on training stability and final performance.
+- [ ] Build and evaluate a model using a pretrained transformer, such as [BERT](https://huggingface.co/docs/transformers/en/model_doc/bert) or [DistilBERT](https://arxiv.org/abs/1910.01108), for improved text understanding.
   - Visualize attention weights to interpret which words influence predictions.
 
 ## REFERENCES
