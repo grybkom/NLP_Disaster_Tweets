@@ -94,7 +94,7 @@ All other training parameters (optimizer, loss function, metrics, epochs, batch 
 - [ ] Compare lemmatization vs. stemming to determine which improves model performance during text preprocessing.
 - [ ] Assess the impact of alternative learning rate schedulers, such as CosineDecayRestarts, on training stability and final performance.
 - [ ] Build and evaluate a model using a pretrained transformer, such as [BERT](https://huggingface.co/docs/transformers/en/model_doc/bert) or [DistilBERT](https://arxiv.org/abs/1910.01108), for improved text understanding.
-  - Visualize attention weights to interpret which words influence predictions.
+  - [ ] Visualize attention weights to interpret which words influence predictions.
 
 ## REFERENCES
 
