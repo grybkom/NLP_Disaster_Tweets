@@ -44,7 +44,7 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 **This baseline model serves as a starting point for comparing more complex architectures.**
 
 **Architecture:**
-- Embedding layer with vocabulary size of 3,500 and 15-dimensional embedding vectors
+- Embedding layer with vocabulary size of 3,500 and 16 dimensional embedding vectors
 - SpatialDropout1D with dropout rate of 0.8 to regularize the embedding layer
 - Masking layer to ignore padded values (0s)
 - SimpleRNN layer with 64 units
