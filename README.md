@@ -70,7 +70,7 @@ Tweets are short social networking posts broadcasted over the Twitter platform (
 All other training parameters (optimizer, loss function, metrics, epochs, batch size, learning rate schedule) remained the same as in the Simple RNN model.
 
 #### 3) Bidirectional LSTM (BiLSTM)
-**This model builds off the previous RNN architectures replacing Simple RNN layers wiht Bidirectional LSTM layers to capture context from both past and future tokens**
+**This model builds off the previous RNN architectures replacing Simple RNN layers with Bidirectional LSTM layers to capture context from both past and future tokens**
 
 - Two stacked Bidirectional LSTM layers:
   - The first returns full sequences to allow the second LSTM to process temporal patterns further.
